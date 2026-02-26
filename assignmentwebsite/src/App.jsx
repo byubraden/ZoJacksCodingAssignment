@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-const LAMBDA_URL =
-  "https://eid2jyx3yq6em44lpgkarvqcn40gixum.lambda-url.us-east-2.on.aws/";
+const LAMBDA_URL = import.meta.env.VITE_LAMBDA_URL;
 
 function App() {
   const [limit, setLimit] = useState(25);

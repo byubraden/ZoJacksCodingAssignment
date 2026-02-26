@@ -1,1 +1,2 @@
 .env
+VITE_LAMBDA_URL=https://eid2jyx3yq6em44lpgkarvqcn40gixum.lambda-url.us-east-2.on.aws/
