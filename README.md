@@ -79,8 +79,8 @@ This inserts 20 sample records into the `ZoJacks` table.
 
 1. In your Lambda, go to **Configuration → Function URL → Create function URL**
 2. Auth type: `NONE` (public)
-3. Enable **CORS** and allow your frontend's origin (or `*` for development)
-4. Copy the generated URL and update `LAMBDA_URL` in `assignmentwebsite/src/App.jsx`
+3. Leave the Function URL CORS configuration disabled — CORS is handled in the Lambda response headers
+4. Copy the generated URL and set it as `VITE_LAMBDA_URL` in `assignmentwebsite/.env` (local) or in your hosting provider's environment variables
 
 ---
 

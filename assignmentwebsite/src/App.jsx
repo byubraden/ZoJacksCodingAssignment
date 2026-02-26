@@ -66,17 +66,22 @@ function App() {
             />
           </div>
 
+          {/* Status filter as pill buttons */}
           <div className="control-group">
             <label>Status</label>
-            <select
-              value={statusFilter}
-              onChange={(e) => setStatusFilter(e.target.value)}
-            >
-              <option value="all">All</option>
-              <option value="active">Active</option>
-              <option value="inactive">Inactive</option>
-              <option value="pending">Pending</option>
-            </select>
+            <div className="pill-group">
+              {["all", "active", "inactive", "pending"].map((s) => (
+                <button
+                  key={s}
+                  className={`pill ${statusFilter === s ? "pill-active" : ""}`}
+                  style={statusFilter === s && s !== "all" ? { background: statusColors[s] } : {}}
+                  onClick={() => setStatusFilter(s)}
+                  disabled={loading}
+                >
+                  {s.charAt(0).toUpperCase() + s.slice(1)}
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Fetch button — disabled while loading */}

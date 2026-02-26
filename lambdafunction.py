@@ -21,7 +21,7 @@ def lambda_handler(event, context):
     # Response headers: JSON content type + allow requests from any origin (CORS)
     headers = {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
+        'Access-Control-Allow-Origin': 'https://zo-jacks-coding-assignment.vercel.app'
     }
 
     try:

@@ -82,6 +82,33 @@ tr:hover td { background: #1e293b; }
 
 .empty { color: #64748b; font-size: 0.9rem; padding-top: 0.5rem; }
 
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.pill {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid #334155;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  cursor: pointer;
+  height: auto;
+}
+
+.pill:hover:not(:disabled) { border-color: #3ecb7f; color: #e2e8f0; background: transparent; }
+
+.pill-active {
+  background: #3ecb7f;
+  border-color: #3ecb7f;
+  color: white;
+}
+
+.pill-active:hover:not(:disabled) { background: #2db96e; border-color: #2db96e; color: white; }
+
 .badge {
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
