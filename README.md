@@ -2,6 +2,8 @@
 
 A full-stack serverless data viewer built with React, AWS Lambda, and DynamoDB.
 
+**Live demo:** https://zo-jacks-coding-assignment.vercel.app
+
 ---
 
 ## Architecture Overview
@@ -36,7 +38,7 @@ npm run dev
 
 Open `http://localhost:5173` in your browser.
 
-> The frontend calls the Lambda Function URL defined in `src/App.jsx` (`LAMBDA_URL`). If you deploy your own Lambda, update that value.
+> The frontend reads the Lambda URL from the `VITE_LAMBDA_URL` environment variable. Create `assignmentwebsite/.env` with your own URL to run locally, or set it in your hosting provider's environment variables.
 
 ---
 

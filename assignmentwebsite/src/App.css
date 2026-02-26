@@ -53,14 +53,14 @@ button {
   padding: 0.5rem 1.25rem;
   border-radius: 6px;
   border: none;
-  background: #6366f1;
+  background: #3ecb7f;
   color: white;
   font-size: 0.95rem;
   cursor: pointer;
   height: 36px;
 }
 
-button:hover:not(:disabled) { background: #4f46e5; }
+button:hover:not(:disabled) { background: #2db96e; }
 button:disabled { opacity: 0.5; cursor: not-allowed; }
 
 .error { color: #f87171; margin-bottom: 1rem; }
@@ -76,7 +76,7 @@ th, td {
   font-size: 0.9rem;
 }
 
-th { color: #94a3b8; font-weight: 500; background: #1e293b; }
+th { color: #e2e8f0; font-weight: 500; background: #162035; }
 
 tr:hover td { background: #1e293b; }
 
